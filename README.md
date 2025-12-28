@@ -6,9 +6,6 @@ L'interfaccia è divisa in **Split-View** (Schermo diviso):
 * **Sinistra (Input):** Feed della webcam con bounding box facciale, emozione rilevata e percentuale di confidenza.
 * **Destra (Output):** Visualizza dinamicamente un'immagine (o meme) corrispondente all'emozione rilevata (es. *Felicità, Rabbia, Sorpresa*).
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python)
-![OpenCV](https://img.shields.io/badge/OpenCV-DNN-green?style=flat&logo=opencv)
-
 ---
 
 ## 📋 Caratteristiche
@@ -38,7 +35,7 @@ Assicurati che la tua cartella contenga questi file fondamentali:
 
 ### Prerequisiti
 
-* **Python 3.7 o superiore** installato sul tuo sistema
+* **Python 3.7 - 3.12** installato sul tuo sistema (testato fino alla versione 3.12)
 * Una webcam funzionante
 
 ### 1. Clona o scarica il progetto
@@ -82,14 +79,16 @@ pip install -r requirements.txt
 
 #### a) Haar Cascade (Rilevamento volti)
 
-Scarica il file `haarcascade_frontalface_default.xml` da:
-* [Repository ufficiale OpenCV](https://github.com/opencv/opencv/tree/master/data/haarcascades)
+Scarica il file `haarcascade_frontalface_default.xml` direttamente da questo link:
+* **[Download haarcascade_frontalface_default.xml](https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml)**
 
-Oppure puoi scaricarlo direttamente con questo comando:
+Oppure puoi scaricarlo tramite terminale con questo comando:
 
 ```bash
 wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
 ```
+
+In alternativa, puoi trovarlo anche nel [Repository ufficiale OpenCV](https://github.com/opencv/opencv/tree/master/data/haarcascades).
 
 #### b) Modello ONNX per emozioni
 
